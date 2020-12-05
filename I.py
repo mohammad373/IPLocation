@@ -5,7 +5,7 @@ import os
 import requests
 import sys
 import time
-from Colorama import Fore
+from colorama import Fore
 
 def __1__():
     try:
