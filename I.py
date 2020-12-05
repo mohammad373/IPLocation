@@ -22,12 +22,7 @@ def __1__():
             site = "http://" + site
         target = socket.gethostbyname(str(site))
         print(target)
-        info = requests.get("https://iplocation.net" + target).text
-        print(info)
-    except:
-        try:
-            print(Fore.RED + "Ok Good Bay ;)")
-            time.sleep(3)
-        except:
-            pass
-__1__()
+        info = requests.get("https://api.hackertarget.com/ipapi/?q=" + target).text
+        if info.status_code == 404:
+            print("Ok    KKKKKKKKKKKKKKKKKKKK")
+__1__()           
