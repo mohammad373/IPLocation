@@ -25,4 +25,4 @@ def __1__():
         info = requests.get("https://api.hackertarget.com/ipapi/?q=" + target).text
         if info.status_code == 404:
             print("Ok    KKKKKKKKKKKKKKKKKKKK")
-__1__()           
+__1__()
