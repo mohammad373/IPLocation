@@ -21,11 +21,13 @@ def __1__():
         if not "http" in site or not "https" in site:
             site = "http://" + site
         target = socket.gethostbyname(str(site))
+        print(target)
         info = requests.get("https://www.iplocation.net" + target).text
         print(info)
     except:
         try:
             print(Fore.RED + "Ok Good Bay ;)")
+            time.sleep(3)
             os.system("clear")
         except:
             pass
